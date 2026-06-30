@@ -1,4 +1,6 @@
 #include<iostream>
+using namespace std;
+
 
 int main(){
     int a;
@@ -10,5 +12,7 @@ int main(){
         sum+=arr[i];
     }
     cout<<sum;
+
+    
 
 }

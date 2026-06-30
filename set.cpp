@@ -13,18 +13,18 @@ int main() {
     cout<<s.size()<<endl;
     s.clear();
     cout<<s.size()<<endl;
-    if(s.find(20)==s.end(){
-        return"false";
+    if(s.find(20)==s.end()){
+        cout<<"false"<<endl;
     }
     else{
-        return "true";
-    })
+        cout<<"true"<<endl;
+    }
     s.insert(30);
-    if(s.find(30)==s.end(){
-        return"false";
+    if(s.find(30)==s.end()){
+        cout<<"false"<<endl;
     }
     else{
-        return "true";
-    })
+        cout<<"true"<<endl;
+    }
     cout<<s.size();
 }
