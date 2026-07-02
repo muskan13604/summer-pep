@@ -7,7 +7,7 @@ int main(){
 
     // int ans = 0;
 
-    // for(int i=1; i<=n; i++){
+    // for(int i=1; i<=n; i++){            //O(N)
     //     ans  = ans ^ i;
     // }
     // cout<<ans<<endl;
@@ -18,7 +18,7 @@ int main(){
     if(n%4==2){
         cout<<n+1<<endl;
     }
-    if(n%4==3){
+    if(n%4==3){                          //O(1)
         cout<<0<<endl;
     }
     if(n%4==0){
