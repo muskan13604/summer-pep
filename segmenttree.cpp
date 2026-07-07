@@ -13,6 +13,20 @@ void build_segment_tree(int i, int arr[], int n, int low, int high, vector<int>&
     segment_array[i] = segment_array[2 * i + 1] + segment_array[2 * i + 2];
 }
 
+void point_update(int i, int low, int high, int index, int value, vector<int>& segment_array) {
+    if (low == high) {
+        segment_array[i] = value;
+        return;
+    }
+    int mid = (low + high) / 2;
+    if (index <= mid) {
+        point_update(2 * i + 1, low, mid, index, value, segment_array);
+    } else {
+        point_update(2 * i + 2, mid + 1, high, index, value, segment_array);
+    }
+    segment_array[i] = segment_array[2 * i + 1] + segment_array[2 * i + 2];
+}
+
 int main() {
     int arr[] = {6, 7, 2, 1, 4, 0, 5, 0, 9};
     int n = sizeof(arr)/sizeof(arr[0]);
