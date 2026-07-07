@@ -20,7 +20,7 @@ int main() {
     int low = 0;
     int high = n - 1;
     int index = 0;
-    build_segment_tree(index, arr, n, low, high, segment_array);
+    build_segment_tree(i, arr, n, low, high, segment_array);
     for (int i = 0; i < 4 * n; i++) {
         cout << segment_array[i] << " ";
     }
