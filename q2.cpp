@@ -1,0 +1,1 @@
+// ek array h 2 4 5 9 11 15 18 27 31 n=9 k=4 or mtlb hume k as far sa possible maximum distace p 
