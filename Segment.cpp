@@ -40,10 +40,11 @@ int main() {
     build_segment_tree(index, arr, n, low, high, segment_array);
     for(int i = 0; i < 4 * n; i++) {
         cout << segment_array[i] << " ";
+       
     }
 
-    point_update(0, low, high, 1, 7, segment_array);
-    arr[1] = 7;
+    point_update(0, low, high, 1, -10, segment_array);
+    arr[1] = -10;
 
     point_update(0, low, high, 5, 7, segment_array);
     arr[5] = 7;
@@ -54,6 +55,7 @@ int main() {
     // update array
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
+        
     }
 
 // update segment tree
